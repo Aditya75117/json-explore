@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { cn } from "@json-explore/ui/cn";
 import { Button } from "@json-explore/ui/components/button";
+import { ChevronIcon } from "@json-explore/ui/components/chevron-icon";
 
 export interface DropdownItem {
   id: string;
@@ -117,9 +118,10 @@ export function Dropdown({
         }}
       >
         {label}
-        <span aria-hidden="true" className="text-muted">
-          ▾
-        </span>
+        <ChevronIcon
+          direction={open ? "up" : "down"}
+          className="text-muted"
+        />
       </Button>
       {open ? (
         <ul
