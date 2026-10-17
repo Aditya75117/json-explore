@@ -1,6 +1,7 @@
 export { Badge } from "@json-explore/ui/components/badge";
 export { BrandMark } from "@json-explore/ui/components/brand-mark";
 export { Button } from "@json-explore/ui/components/button";
+export { ChevronIcon } from "@json-explore/ui/components/chevron-icon";
 export { CommandBar } from "@json-explore/ui/components/command-bar";
 export { Dialog } from "@json-explore/ui/components/dialog";
 export { Divider } from "@json-explore/ui/components/divider";
