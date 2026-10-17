@@ -62,16 +62,24 @@ export function ProductPreview() {
         </span>
       </div>
       <div className="grid lg:grid-cols-3">
-        <div className="border-border text-caption hidden border-r p-3 font-mono leading-relaxed lg:block">
+        <div className="border-border text-caption hidden min-w-0 border-r p-3 font-mono leading-relaxed lg:block">
           <p className="text-muted text-caption mb-2 tracking-wide uppercase">
             Source
           </p>
-          <pre className="text-foreground whitespace-pre">{`{
+          <pre className="text-foreground overflow-x-auto whitespace-pre">{`{
   "users": [
-    { "id": 1, "name": "Ada" },
-    { "id": 2, "name": "Grace" }
+    {
+      "id": 1,
+      "name": "Ada"
+    },
+    {
+      "id": 2,
+      "name": "Grace"
+    }
   ],
-  "meta": { "active": true }
+  "meta": {
+    "active": true
+  }
 }`}</pre>
         </div>
         <div className="border-border border-b p-3 font-mono text-xs leading-relaxed lg:border-r lg:border-b-0">
