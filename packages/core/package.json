@@ -1,0 +1,32 @@
+{
+  "name": "@json-explore/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./json": "./src/json/index.ts",
+    "./json/*": "./src/json/*",
+    "./search": "./src/search/index.ts",
+    "./search/*": "./src/search/*",
+    "./query": "./src/query/index.ts",
+    "./query/*": "./src/query/*",
+    "./statistics": "./src/statistics/index.ts",
+    "./statistics/*": "./src/statistics/*",
+    "./processing": "./src/processing/index.ts",
+    "./processing/*": "./src/processing/*",
+    "./performance": "./src/performance/index.ts",
+    "./performance/*": "./src/performance/*",
+    "./workers/*": "./src/workers/*",
+    "./types": "./src/types/index.ts",
+    "./types/*": "./src/types/*",
+    "./constants/*": "./src/constants/*",
+    "./utils/*": "./src/utils/*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@cfworker/json-schema": "^4.1.1"
+  }
+}
