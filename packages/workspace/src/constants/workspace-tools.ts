@@ -7,9 +7,21 @@ export const WORKSPACE_PARSE_DEBOUNCE_MS = 300;
 
 export const SAMPLE_WORKSPACE_JSON = `{
   "users": [
-    { "id": 1, "name": "Ada", "email": "ada@example.com" },
-    { "id": 2, "name": "Grace", "role": "engineer" }
+    {
+      "id": 1,
+      "name": "Ada",
+      "profile": { "email": "ada@example.com" }
+    },
+    {
+      "id": 2,
+      "name": "Grace",
+      "role": "engineer",
+      "profile": { "email": "grace@example.com" }
+    }
   ],
+  "user.profile": {
+    "first-name": "Ada"
+  },
   "meta": { "version": 1, "active": true }
 }
 `;
