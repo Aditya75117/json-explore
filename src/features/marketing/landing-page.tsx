@@ -45,8 +45,10 @@ export function LandingPage() {
 
 function Hero() {
   return (
-    <section className={sectionFrame}>
-      <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-12">
+    <section className="bg-surface border-border border-b">
+      <div
+        className={`${sectionFrame} grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-12`}
+      >
         <div>
           <p className={eyebrow}>A better way to explore JSON</p>
           <h1 className={`${sectionHeading} sm:text-display`}>
@@ -71,7 +73,7 @@ function Hero() {
 function Problem() {
   return (
     <section id="why" className="scroll-mt-16">
-      <div className={sectionFrame}>
+      <div className={`${sectionFrame} border-border border-b`}>
         <p className={eyebrow}>Why</p>
         <h2 className={sectionHeading}>
           JSON gets big fast. Finding things in it shouldn&apos;t be slow.
@@ -85,8 +87,8 @@ function Problem() {
               key={item.pain}
               className="border-border grid gap-3 border-t py-6 sm:grid-cols-2 sm:items-baseline sm:gap-10"
             >
-              <p className="text-muted text-sm leading-relaxed">
-                <span className="text-primary mr-3 font-mono text-xs">
+              <p className="text-muted text-base leading-relaxed sm:text-lg">
+                <span className="text-primary mr-3 font-mono text-sm">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 {item.pain}
@@ -104,8 +106,8 @@ function Problem() {
 
 function HowItWorks() {
   return (
-    <section id="how-it-works" className="scroll-mt-16">
-      <div className={sectionFrame}>
+    <section id="how-it-works" className="bg-surface-muted scroll-mt-16">
+      <div className={`${sectionFrame} border-border border-b`}>
         <p className={eyebrow}>How it works</p>
         <h2 className={sectionHeading}>Three steps, one document.</h2>
         <p className={sectionIntro}>
@@ -186,7 +188,7 @@ function Privacy() {
 
 function Faq() {
   return (
-    <section id="faq" className="scroll-mt-16">
+    <section id="faq" className="bg-surface-muted scroll-mt-16">
       <div
         className={`${sectionFrame} grid gap-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start`}
       >
