@@ -1,0 +1,26 @@
+{
+  "name": "@json-explore/workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./host": "./src/host/index.ts",
+    "./hooks/*": "./src/hooks/*",
+    "./features/*": "./src/features/*",
+    "./constants/*": "./src/constants/*",
+    "./components/*": "./src/components/*",
+    "./lib/*": "./src/lib/*"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@json-explore/core": "*",
+    "@json-explore/ui": "*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

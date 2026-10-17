@@ -1,0 +1,25 @@
+{
+  "name": "@json-explore/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./cn": "./src/cn.ts",
+    "./a11y": "./src/a11y.ts",
+    "./tokens.css": "./src/tokens.css",
+    "./components/*": "./src/components/*"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@json-explore/core": "*",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}

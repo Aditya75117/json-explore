@@ -1,0 +1,199 @@
+/* Structural Graphite — light */
+:root {
+  /* Base */
+  --background: #F7FAFA;
+  --foreground: #092B2D;
+
+  /* Surfaces */
+  --surface: #FFFFFF;
+  --surface-muted: #EAF2F2;
+
+  /* Borders */
+  --border: #D5E2E2;
+  --border-strong: #A8C2C1;
+
+  /* Brand and actions */
+  --primary: #0F766E;
+  --primary-foreground: #FFFFFF;
+  --secondary: #24494A;
+  --secondary-foreground: #FFFFFF;
+
+  /* Supporting text */
+  --muted: #52696A;
+
+  /* Danger */
+  --danger: #B42318;
+  --danger-foreground: #FFFFFF;
+  --danger-muted: #FEF3F2;
+
+  /* Success */
+  --success: #18794E;
+  --success-muted: #ECFDF3;
+
+  /* Warning */
+  --warning: #9A6700;
+  --warning-muted: #FFFAEB;
+
+  /* JSON syntax highlighting */
+  --json-key: #0F5F9C;
+  --json-string: #18794E;
+  --json-number: #6D45C5;
+  --json-keyword: #B4235A;
+
+  /* Interaction */
+  --focus-ring: #0F766E;
+
+  /* Brand palette */
+  --brand-teal: #0F766E;
+  --brand-mint: #35D4B6;
+  --brand-abyss: #092B2D;
+  --brand-glacier: #CCFBF1;
+
+  --overlay: rgb(15 23 42 / 0.45);
+
+  --font-size-caption: 0.6875rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.8125rem;
+  --font-size-md: 0.875rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.75rem;
+  --font-size-3xl: 2.25rem;
+  --font-size-display: 3rem;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --border-width-hairline: 1px;
+  --border-width-emphasis: 2px;
+
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.05);
+  --shadow-md: 0 4px 12px rgb(15 23 42 / 0.08);
+
+  --header-height: 3rem;
+  --panel-min-height: 12rem;
+  --workspace-panel-max: calc(100dvh - var(--header-height) - 1.5rem);
+}
+
+/* Structural Graphite — dark (developer-default) */
+.dark {
+  --background: #0d0f12;
+  --foreground: #e7e9ed;
+  --surface: #14171b;
+  --surface-muted: #1c2025;
+  --border: #2b3037;
+  --border-strong: #414852;
+  --primary: #5cc8ba;
+  --primary-foreground: #071f1c;
+  --secondary: #a1a8b2;
+  --secondary-foreground: #0d0f12;
+  --muted: #929aa6;
+  --danger: #f87171;
+  --danger-foreground: #1c0707;
+  --danger-muted: #3f1d1d;
+  --success: #4ade80;
+  --success-muted: #14532d;
+  --warning: #fbbf24;
+  --warning-muted: #422006;
+  --json-key: #5eead4;
+  --json-string: #86efac;
+  --json-number: #93c5fd;
+  --json-keyword: #fda4af;
+  --focus-ring: #5eead4;
+  --overlay: rgb(0 0 0 / 0.6);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+  --shadow-md: 0 8px 24px rgb(0 0 0 / 0.45);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --color-danger-muted: var(--danger-muted);
+  --color-success: var(--success);
+  --color-success-muted: var(--success-muted);
+  --color-warning: var(--warning);
+  --color-warning-muted: var(--warning-muted);
+  --color-json-key: var(--json-key);
+  --color-json-string: var(--json-string);
+  --color-json-number: var(--json-number);
+  --color-json-keyword: var(--json-keyword);
+  --color-focus-ring: var(--focus-ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --text-caption: var(--font-size-caption);
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-md);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-display: var(--font-size-display);
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --spacing-10: var(--space-10);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+  --font-weight-normal: var(--weight-regular);
+  --font-weight-medium: var(--weight-medium);
+  --font-weight-semibold: var(--weight-semibold);
+  --font-weight-bold: var(--weight-bold);
+}
+
+@utility border-hairline {
+  border-width: var(--border-width-hairline);
+}
+
+@utility border-emphasis {
+  border-width: var(--border-width-emphasis);
+}
+
+/* Theme swap for the two logo files: teal on light, white on dark. */
+.brand-mark__on-dark {
+  display: none;
+}
+
+html.dark .brand-mark__on-light {
+  display: none;
+}
+
+html.dark .brand-mark__on-dark {
+  display: block;
+}
