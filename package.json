@@ -1,0 +1,49 @@
+{
+  "name": "json-explore",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "next dev --port 4500",
+    "build": "next build",
+    "start": "next start --port 4500",
+    "test": "vitest run",
+    "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit && npm run typecheck -w @json-explore/core && npm run typecheck -w @json-explore/ui && npm run typecheck -w @json-explore/workspace && npm run typecheck -w @json-explore/extension",
+    "dev:extension": "npm run dev -w @json-explore/extension",
+    "build:extension": "npm run build -w @json-explore/extension"
+  },
+  "dependencies": {
+    "@json-explore/core": "*",
+    "@json-explore/ui": "*",
+    "@json-explore/workspace": "*",
+    "clsx": "^2.1.1",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "eslint-config-prettier": "^10.1.8",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^4.1.11"
+  }
+}
