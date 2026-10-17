@@ -19,6 +19,7 @@ import {
 import { treeItemDomId } from "@json-explore/workspace/lib/a11y/keyboard";
 import { isContainerNode } from "@json-explore/core/json/node";
 import { cn } from "@json-explore/ui/cn";
+import { ChevronIcon } from "@json-explore/ui/components/chevron-icon";
 import type { JsonNode } from "@json-explore/core/types/json";
 
 export interface JsonTreeNodeProps {
@@ -91,7 +92,7 @@ export const JsonTreeNode = memo(function JsonTreeNode({
             onToggle(node.id);
           }}
         >
-          <span aria-hidden="true">{expanded ? "▼" : "▶"}</span>
+          <ChevronIcon direction={expanded ? "down" : "right"} />
         </button>
       ) : (
         <span className="w-8 shrink-0 sm:w-5" aria-hidden="true" />
